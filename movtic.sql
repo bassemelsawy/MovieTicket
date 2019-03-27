@@ -38,8 +38,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`username`, `admin_password`) VALUES
-('farahlabib', 'Farah_1997'),
-('mirnaashraf', 'Mirna_1996');
+('bassemelsawy', 'Bassem_2018');
 
 -- --------------------------------------------------------
 
@@ -103,8 +102,7 @@ CREATE TABLE `reserve` (
 --
 
 INSERT INTO `reserve` (`user_username`, `movie_ID`, `reservation_num`, `reservation_date`, `num_of_reserved_seats`, `seat_num`, `play_time`) VALUES
-('Sherine Labib', 'The Mule', 59, '2018-12-18', 4, '1,6,11,16', '3pm'),
-('Sherine Labib', 'The Mule', 60, '2018-12-18', 4, '1,6,11,16', '3pm');
+('bassem_elsawy', 'The Mule', 59, '2018-12-18', 4, '1,6,11,16', '3pm');
 
 -- --------------------------------------------------------
 
@@ -125,9 +123,7 @@ CREATE TABLE `usertable` (
 --
 
 INSERT INTO `usertable` (`username`, `user_password`, `full_name`, `phone_num`, `email`) VALUES
-('farah_labib', 'Farah_1997', 'Farah Hassan Labib', '01116601411', 'farahhlabib@gmail.com'),
-('mirna_ashraf', 'Mirna_1996', 'Mirna Ashraf', '01092882057', 'miirnaelkassar@gmail.com'),
-('sherine_labib', 'Sherine_1997', 'Sherine Labib', '01111002155', 'sherina_97@gmail.com');
+('bassem_elsawy', 'Bassem_2018', 'Bassem Adel El-Sawy', '01116601411', 'bassemelsawy22@gmail.com');
 
 --
 -- Indexes for dumped tables
