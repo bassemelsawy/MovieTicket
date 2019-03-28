@@ -65,27 +65,14 @@
             <input type="text" name="movieTrailer" id="movieTrailer" placeholder="Enter URL trailer" autocomplete="off" required>
             <p>Is the movie 3D?</p>
             <input type="text" name="is3D" id="is3D" placeholder="yes = 1, No = 0" autocomplete="off" required>
+            <p>Movie image</p>
+            <input type="file" name="movie_image" id="movie_image" placeholder="upload photo" autocomplete="off" required>
             <p>Is the movie 18 Plus?</p>
             <input type="text" name="is18plus" id="is18plus" placeholder="yes = 1, No = 0" autocomplete="off" required>
             <input type="submit" name="subBtn" id="subBtn" value="Add Movie" style="background: #790c0c">
     </div>
     </form>
     <script>
-        function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-            
-                reader.onload = function (e) {
-                    $('#movie_image').attr('src', e.target.result);
-                }
-                reader.readAsDataURL(input.files[0]);
-            }
-            document.getElementById("movie_image").style.display = "block";
-            document.getElementById("upload_image").style.display = "none";
-        }
-        $("#upload_image").change(function(){
-            readURL(this);
-        });
         window.onscroll = function() {scrollFunction()};
             function scrollFunction() {
                 if (document.body.scrollTop || document.documentElement.scrollTop) {
