@@ -72,7 +72,7 @@
 
     <div style="padding: 150px 20px 10px 20px">
         <h1><?php $movie_name = $array['movie_name']; echo $movie_name; $_SESSION['movieName'] = $movie_name;?></h1> 
-        <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($array['movie_poster']) .'" style="margin-bottom: 10px; margin-right: 20px; margin-top: 15px; float: left; height: 380px">';  ?> 
+         <?php    echo '<img src="'.$array['movie_poster'].'" style="margin-bottom: 10px; margin-right: 20px; float: left"/>'; ?> 
         <p style="color: white; margin-top: 10px; font-family: monospace; font-size: 22px"> DESCRIPTION:<?php echo $array['description']; ?></p>
         <p style="color: white; font-family: monospace; font-size: 22px">CATEGORY: <?php echo $array['category']; ?></p>
         <p style="color: white; font-family: monospace; font-size: 22px">CAST: <?php echo $array['cast']; ?></p>

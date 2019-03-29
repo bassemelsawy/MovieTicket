@@ -66,7 +66,8 @@
             <div class="row">
             	<?php for ($i = 0; $i < $size; $i++)  {?>
                 <div class="col-md-12">
-                    <a href="movieDetails.php?id=<?php echo $array[$i]['movie_ID']; ?>"/> <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($array[$i]['movie_poster']) .'" style="margin-bottom: 10px; margin-right: 20px; float: left"></a>';  ?> 
+                    <a href="movieDetails.php?id=<?php echo $array[$i]['movie_ID']; ?>"/> 
+                     <?php    echo '<img src="'.$array[$i]['movie_poster'].'" style="margin-bottom: 10px; margin-right: 20px; float: left"/>'; ?>
                     <p style="color: white; margin-top: 50px; font-family: monospace; font-size: 18px"> <?php echo $array[$i]['description']; ?> </p>
                 </div>
                 <?php
